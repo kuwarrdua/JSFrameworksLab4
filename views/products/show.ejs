@@ -1,16 +1,12 @@
 <%- include ('../partials/header') %>
-
 <div class="container my-5">
   <!-- Add in your own product display -->
-  <header class="container">
-    <h1><%= products.name %></h1>
+  <header>
+    <h1>Product Name <span style="color:red"> ᕕ( ᐛ )ᕗ </span><%= product.name %></h1>
   </header>
+  <hr>
+  <h2>Product Description <span style="color:red"> ᕕ( ᐛ )ᕗ </span> <%= product.description %></h2>
+    <h2>Product Price <span style="color:red"> ᕕ( ᐛ )ᕗ </span> <%= product.price %></h2>
 </div>
-<div class="description">
-  <%- products.Description %>
 </div>
-<div class="price">
-  <%- products.price %>
-</div>
-
 <%- include ('../partials/footer') %>
